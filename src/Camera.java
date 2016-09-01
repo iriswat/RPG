@@ -1,6 +1,6 @@
 /* SWEN20003 Object Oriented Software Development
  * RPG Game Engine
- * Author: <Your name> <Your login>
+ * Author: <Yuxin Zhang> <yuxinz1>
  */
 
 import org.newdawn.slick.SlickException;
@@ -21,8 +21,6 @@ public class Camera
 
     
     /** The camera's position in the world, in x and y coordinates. */
-    //private int xPos;
-    //private int yPos;
     private double xPos;
     private double yPos;
 
@@ -40,7 +38,6 @@ public class Camera
      * @throws SlickException */
     public Camera(Player player, int screenwidth, int screenheight) throws SlickException
     {   
-        // TO DO: Fill In
     	followUnit(player);
     	this.screenwidth = screenwidth;
     	this.screenheight = screenheight;
@@ -51,7 +48,6 @@ public class Camera
     public void update()
     throws SlickException
     {
-        // TO DO: Fill In
     	xPos = unitFollow.getxPos();
     	yPos = unitFollow.getyPos();
     }
@@ -59,7 +55,6 @@ public class Camera
     /** Returns the minimum x value on screen 
      */
     public double getMinX(){
-        // TO DO: Fill In
     	return xPos - screenwidth/2;
     }
     
@@ -72,7 +67,6 @@ public class Camera
     /** Returns the minimum y value on screen 
      */
     public double getMinY(){
-        // TO DO: Fill In
     	return yPos - screenheight/2;
     }
     
@@ -87,7 +81,6 @@ public class Camera
     public void followUnit(Object unit)
     throws SlickException
     {
-        // TO DO: Fill In
     	unitFollow = (Player) unit;
     }
     
