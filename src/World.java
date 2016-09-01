@@ -1,6 +1,6 @@
 /* 433-294 Object Oriented Software Development
  * RPG Game Engine
- * Author: <Your name> <Your login>
+ * Author: <Yuxin Zhang> <yuxinz1>
  */
 
 import org.newdawn.slick.Graphics;
@@ -42,8 +42,8 @@ public class World
 			}
 		}
 
-
-    	player = new Player(756,684,RPG.screenwidth,RPG.screenheight);//initial player location
+	//initial player location
+    	player = new Player(756,684,RPG.screenwidth,RPG.screenheight);
     	camera = new Camera(player,RPG.screenwidth,RPG.screenheight);
     }
 
@@ -69,7 +69,7 @@ public class World
 		}
 
 		player.update(dir_x, dir_y, delta);
-    	camera.update();
+    		camera.update();
 		// calculate the offset of the player from the edge of the tile
 		playerTileOffsetX = (int) ((player.getxPos() % TILE_SIZE) - TILE_SIZE);
 		playerTileOffsetY = (int) ((player.getyPos() % TILE_SIZE) - TILE_SIZE);
