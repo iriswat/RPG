@@ -8,7 +8,8 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
 public class Player {
-	Image character;
+	/** Create a new Player object. */
+	private Image character;
 
 	/** The player's position in the world, in x and y coordinates. */
 	private double xPos;
