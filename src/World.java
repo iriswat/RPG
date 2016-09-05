@@ -29,7 +29,7 @@ public class World {
 	private final int initialPlayerY = 684;
 
 	/**
-	 * measures how far to offset the tile based rendering to give the smooth
+	 * measures how far to offset the tile-based rendering to give the smooth
 	 * motion of scrolling as the player moves around.
 	 */
 	private int offsetX;
